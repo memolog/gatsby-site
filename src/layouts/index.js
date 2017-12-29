@@ -7,6 +7,8 @@ import { rhythm, scale } from '../utils/typography'
 require('./common.css');
 require('./prism.css');
 
+import config from '../../gatsby-config';
+
 class Template extends React.Component {
   render() {
     const { location, children } = this.props
@@ -34,7 +36,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            メモログ
+            {config.siteMetadata.title}
           </Link>
         </h1>
       )
@@ -55,7 +57,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            メモログ
+            {config.siteMetadata.title}
           </Link>
         </h3>
       )

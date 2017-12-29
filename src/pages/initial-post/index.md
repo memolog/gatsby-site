@@ -17,7 +17,7 @@ tags:
 とはいえ、一応最初に行ったことをそのまま書き記しておこうと思う。
 
 ### nvmで Node 9.xをインストール
-インストール時か`bash gatsby develop`のときか失念してしまったが、どこかのタイミングで`error serve@6.4.3: The engine "node" is incompatible with this module. Expected version ">=6.9.0".`というエラーが発生してしまったので、ローカル環境に9.2をインストール（今確認したらすでに最新は9.3だったが）。[nvm](https://github.com/creationix/nvm)はだいぶ前にインストールしたのでどうインストールしたか失念。[Homebrew](https://brew.sh/)でインストールしたのかもしれない。
+インストール時か`gatsby develop`のときか失念してしまったが、どこかのタイミングで`error serve@6.4.3: The engine "node" is incompatible with this module. Expected version ">=6.9.0".`というエラーが発生してしまったので、ローカル環境に9.2をインストール（今確認したらすでに最新は9.3だったが）。[nvm](https://github.com/creationix/nvm)はだいぶ前にインストールしたのでどうインストールしたか失念。[Homebrew](https://brew.sh/)でインストールしたのかもしれない。
 
 ```bash
 nvm install 9

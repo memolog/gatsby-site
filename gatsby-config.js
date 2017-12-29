@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'メモログ',
     author: 'Yutaka Yamaguchi',
-    description: 'Just my personal notes',
+    description: 'Just my personal notes to make better code 🔧',
     siteUrl: 'https://memolog.github.io/site',
   },
   pathPrefix: '/site',
