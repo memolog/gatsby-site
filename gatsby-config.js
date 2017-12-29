@@ -5,7 +5,7 @@ module.exports = {
     description: 'A starter blog demonstrating what Gatsby can do.',
     siteUrl: 'https://gatsbyjs.github.io/gatsby-starter-blog/',
   },
-  pathPrefix: '/static-site',
+  pathPrefix: '/site',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
