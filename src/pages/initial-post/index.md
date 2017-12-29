@@ -26,7 +26,7 @@ nvm alias default 9
 デフォルトの設定を6.xにしていたのだけど、これを機にローカルで使用するバージョンは9.xに変更した。
 
 ### Gatsby CLI のインストール とサイトの作成
-ここから先は基本的には(Gatsby getting started)[https://www.gatsbyjs.org/docs/]と同じことをただやった。
+ここから先は基本的には[Gatsby getting started](https://www.gatsbyjs.org/docs/)と同じことをただやった。
 
 ```
 npm install -g gatsby-cli
@@ -44,7 +44,7 @@ git commit
 git push origin master
 ```
 
-そのあと、 (Deploying Getsby)[https://www.gatsbyjs.org/docs/deploy-gatsby/#github-pages] の内容にしたがって、Github Pagesへのデプロイ準備
+そのあと、 [Deploying Getsby](https://www.gatsbyjs.org/docs/deploy-gatsby/#github-pages)の内容にしたがって、Github Pagesへのデプロイ準備
 [Yarn](https://yarnpkg.com/docs/install)はいつインストールしたか失念したが、`brew install yarn --without-node` でインストールしたと思う。
 
 ```
