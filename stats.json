@@ -4,6 +4,10 @@
       "path---initial-post-503f964fd5a3fc975ff8.js",
       "path---initial-post-503f964fd5a3fc975ff8.js.map"
     ],
+    "path---second-post": [
+      "path---second-post-9fc51b87130e8e02a766.js",
+      "path---second-post-9fc51b87130e8e02a766.js.map"
+    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-ad82a974b33a8ca05e30.js",
       "component---src-pages-index-js-ad82a974b33a8ca05e30.js.map"
@@ -25,8 +29,8 @@
       "component---src-layouts-index-js-4313b8965c3c4af6c354.js.map"
     ],
     "path---index": [
-      "path---index-d0fa334ecf4816a4a726.js",
-      "path---index-d0fa334ecf4816a4a726.js.map"
+      "path---index-dea31ed112d764b7fbfe.js",
+      "path---index-dea31ed112d764b7fbfe.js.map"
     ],
     "commons": [
       "commons-3f8cdb987559d31a3a4e.js",
@@ -39,9 +43,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-e3784c0784305c437c3c.js",
+      "app-a554c651c37dcb9fc0af.js",
       "build-js-styles.css",
-      "app-e3784c0784305c437c3c.js.map",
+      "app-a554c651c37dcb9fc0af.js.map",
       "build-js-styles.css.map"
     ]
   }

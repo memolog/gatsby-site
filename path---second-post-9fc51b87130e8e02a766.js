@@ -1,0 +1,2 @@
+webpackJsonp([26807536709107],{483:function(t,a){t.exports={data:{site:{siteMetadata:{title:"メモログ",author:"Yutaka Yamaguchi"}},markdownRemark:{id:"/Users/yyamaguchi/Desktop/memolog/src/pages/second-post/index.md absPath of file >>> MarkdownRemark",html:"<p>Gatsby いきなりサイトを生成することができてすごく便利なんだけど、少しカスタマイズしようとすると、いろいろ調べるところが多くてだんだん面倒になってきた。</p>",frontmatter:{title:"Gatsby便利だけど個人サイトにはどうか",date:"December 29, 2017"}}},pathContext:{slug:"/second-post/"}}}});
+//# sourceMappingURL=path---second-post-9fc51b87130e8e02a766.js.map
