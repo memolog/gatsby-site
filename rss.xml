@@ -1,32 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[メモログ]]></title><description><![CDATA[Just my personal notes]]></description><link>https://memolog.github.io/site</link><generator>RSS for Node</generator><lastBuildDate>Fri, 29 Dec 2017 03:52:08 GMT</lastBuildDate><item><title><![CDATA[Gatsbyでスタティックサイトを作成する]]></title><description><![CDATA[更新しなくなったブログをリニューアルしようと思って、 Gatsby  で構築しようと思い立って、今作成してみている。 Gatsbyは「Blazing-fast static site generator for React」ということで、React…]]></description><link>https://memolog.github.io/site/initial-post/</link><guid isPermaLink="false">https://memolog.github.io/site/initial-post/</guid><pubDate>Fri, 29 Dec 2017 20:11:00 GMT</pubDate><content:encoded>&lt;p&gt;更新しなくなったブログをリニューアルしようと思って、&lt;a href=&quot;https://www.gatsbyjs.org&quot;&gt;Gatsby&lt;/a&gt; で構築しようと思い立って、今作成してみている。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[メモログ]]></title><description><![CDATA[Just my personal notes]]></description><link>https://memolog.github.io/site</link><generator>RSS for Node</generator><lastBuildDate>Fri, 29 Dec 2017 04:06:18 GMT</lastBuildDate><item><title><![CDATA[Gatsbyでスタティックサイトを作成する]]></title><description><![CDATA[更新しなくなったブログをリニューアルしようと思って、 Gatsby  で構築しようと思い立って、今作成してみている。 Gatsbyは「Blazing-fast static site generator for React」ということで、React…]]></description><link>https://memolog.github.io/site/initial-post/</link><guid isPermaLink="false">https://memolog.github.io/site/initial-post/</guid><pubDate>Fri, 29 Dec 2017 20:11:00 GMT</pubDate><content:encoded>&lt;p&gt;更新しなくなったブログをリニューアルしようと思って、&lt;a href=&quot;https://www.gatsbyjs.org&quot;&gt;Gatsby&lt;/a&gt; で構築しようと思い立って、今作成してみている。&lt;/p&gt;
 &lt;p&gt;Gatsbyは「Blazing-fast static site generator for React」ということで、Reactベースのスタティックサイトジェネレータらしいのだけど、実のところまだよくわかっていない。&lt;a href=&quot;https://www.gatsbyjs.org/docs/&quot;&gt;Getting Started&lt;/a&gt; のドキュメントをみて、&lt;a href=&quot;https://github.com/gatsbyjs/gatsby-starter-blog&quot;&gt;gatsby-starter-blog&lt;/a&gt; のstarterをGithub pages で公開しているだけなのだ。&lt;/p&gt;
 &lt;p&gt;とはいえ、一応最初に行ったことをそのまま書き記しておこうと思う。&lt;/p&gt;
 &lt;h3&gt;nvmで Node 9.xをインストール&lt;/h3&gt;
 &lt;p&gt;インストール時か &lt;code&gt;gatsby develop&lt;/code&gt;　のときか失念してしまったが、どこかのタイミングで &lt;code&gt;error serve@6.4.3: The engine &quot;node&quot; is incompatible with this module. Expected version &quot;&gt;=6.9.0&quot;.&lt;/code&gt; というエラーが発生してしまったので、ローカル環境に9.2をインストール（今確認したらすでに最新は9.3だったが）。&lt;a href=&quot;https://github.com/creationix/nvm&quot;&gt;nvm&lt;/a&gt;はだいぶ前にインストールしたのでどうインストールしたか失念。&lt;a href=&quot;https://brew.sh/&quot;&gt;Homebrew&lt;/a&gt;でインストールしたのかもしれない。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-nvm install 9&quot;&gt;&lt;code&gt;nvm alias default 9&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code&gt;nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; 9
+nvm &lt;span class=&quot;token function&quot;&gt;alias&lt;/span&gt; default 9
+&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;デフォルトの設定を6.xにしていたのだけど、これを機にローカルで使用するバージョンは9.xに変更した。&lt;/p&gt;
 &lt;h3&gt;Gatsby CLI のインストール とサイトの作成&lt;/h3&gt;
 &lt;p&gt;ここから先は基本的には&lt;a href=&quot;https://www.gatsbyjs.org/docs/&quot;&gt;Gatsby getting started&lt;/a&gt;と同じことをただやった。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;npm install -g gatsby-cli
-gatsby new memolog https://github.com/gatsbyjs/gatsby-starter-blog&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code&gt;&lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; -g gatsby-cli
+gatsby new memolog https://github.com/gatsbyjs/gatsby-starter-blog
+&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;Github Pages へのデプロイ&lt;/h3&gt;
 &lt;p&gt;Github pagesにデプロイするためにレポジトリをGithub上で作成して、レポジトリを設定。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;git init
-git remote add origin git@github.com:memolog/site.git
-git add .
-git commit
-git push origin master&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code&gt;&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; init
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; remote add origin git@github.com:memolog/site.git
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; add &lt;span class=&quot;token keyword&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit
+&lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin master
+&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;そのあと、 &lt;a href=&quot;https://www.gatsbyjs.org/docs/deploy-gatsby/#github-pages&quot;&gt;Deploying Getsby&lt;/a&gt;の内容にしたがって、Github Pagesへのデプロイ準備
 &lt;a href=&quot;https://yarnpkg.com/docs/install&quot;&gt;Yarn&lt;/a&gt;はいつインストールしたか失念したが、&lt;code&gt;brew install yarn --without-node&lt;/code&gt; でインストールしたと思う。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-none&quot;&gt;&lt;code&gt;yarn add gh-pages --dev
-yarn deploy&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-bash&quot;&gt;&lt;code&gt;yarn add gh-pages --dev
+yarn deploy
+&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;これで完了。いまのところデフォルトのテンプレートそのままなので、これからその辺りを更新していこうと思う。とりあえずプロフィール画像だけでも変更しておきたい。&lt;/p&gt;
 &lt;p&gt;個人的にはカスタムドメインを使用したかっただけど、SSL証明書の関係や、Amazon S3とCloudFront、Route53で新しいドメイン用意しても、個人サイトのトラフィックだとたいしてお金かからないらしいのだけど、個人サイトだし、いつ気が変わってやめるかもわからないし、お金かけずにやる方がいいかなと思ってgithub.ioをそのまま使うことにした。&lt;/p&gt;
